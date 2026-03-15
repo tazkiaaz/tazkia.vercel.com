@@ -105,12 +105,12 @@ export default function HeroSection() {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.9 }}
               className="flex gap-6 justify-center md:justify-start"
-            >
+              >{[
                 { icon: Github, href: "https://github.com/tazkiaaz", label: 'GitHub' },
                 { icon: Linkedin, href: '#', label: 'LinkedIn' },
                 { icon: Youtube, href: '#', label: 'YouTube' },
                 { icon: Instagram, href: "https://instagram.com/tazkiaqrn", label: 'Instagram' },
-              
+              ].map((social) => (
                 <motion.a
                   key={social.label}
                   href={social.href}
