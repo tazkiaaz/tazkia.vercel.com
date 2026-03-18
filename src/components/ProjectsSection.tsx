@@ -1,4 +1,10 @@
 import { motion } from 'framer-motion';
+import holihop from '../assets/holihop.gif'
+import kuyup from '../assets/kuyup.png.png'
+import nailong from '../assets/nailong.jpg'
+import panda from '../assets/panda.jpg'
+import senyum from '../assets/senyum.png.gif'
+import wlee from '../assets/wlee.png.gif'
 import { ExternalLink, Github, Play } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
@@ -7,7 +13,7 @@ const projects = [
     title: 'E-Commerce Platform',
     description: 'Platform e-commerce modern dengan fitur lengkap termasuk payment gateway, inventory management, dan analytics dashboard.',
     tags: ['React', 'Node.js', 'PostgreSQL', 'Stripe'],
-    image: '🛒',
+    image: holihop,
     color: 'from-blue-500/20 to-cyan-500/20',
     github: '#',
     demo: '#',
@@ -16,7 +22,7 @@ const projects = [
     title: 'Learning Management System',
     description: 'Platform pembelajaran online dengan video streaming, quiz interaktif, dan progress tracking.',
     tags: ['Next.js', 'TypeScript', 'MongoDB', 'WebRTC'],
-    image: '📚',
+    image: kuyup,
     color: 'from-purple-500/20 to-pink-500/20',
     github: '#',
     demo: '#',
@@ -25,7 +31,7 @@ const projects = [
     title: 'Social Media Dashboard',
     description: 'Dashboard analytics untuk social media dengan real-time data visualization dan reporting.',
     tags: ['React', 'D3.js', 'Firebase', 'Tailwind'],
-    image: '📊',
+    image: nailong,
     color: 'from-orange-500/20 to-red-500/20',
     github: '#',
     demo: '#',
@@ -34,7 +40,7 @@ const projects = [
     title: 'AI Content Generator',
     description: 'Tool untuk generate konten menggunakan AI dengan integrasi berbagai model language.',
     tags: ['Python', 'FastAPI', 'OpenAI', 'React'],
-    image: '🤖',
+    image: panda,
     color: 'from-green-500/20 to-teal-500/20',
     github: '#',
     demo: '#',
@@ -43,7 +49,7 @@ const projects = [
     title: 'Video Editing Tutorial',
     description: 'Seri tutorial video editing dengan 100+ episode dan 10k+ subscribers.',
     tags: ['Premiere Pro', 'After Effects', 'YouTube'],
-    image: '🎬',
+    image: senyum,
     color: 'from-red-500/20 to-orange-500/20',
     isContent: true,
     youtube: '#',
@@ -52,7 +58,7 @@ const projects = [
     title: 'Coding Tips & Tricks',
     description: 'Konten tips programming dan best practices untuk developer Indonesia.',
     tags: ['Instagram', 'TikTok', 'YouTube Shorts'],
-    image: '💡',
+    image: wlee,
     color: 'from-cyan-500/20 to-blue-500/20',
     isContent: true,
     youtube: '#',
@@ -89,7 +95,11 @@ export default function ProjectsSection() {
             >
               <div className="h-full p-6 glass rounded-2xl shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-2">
                 <div className={`aspect-video rounded-xl mb-4 flex items-center justify-center bg-gradient-to-br ${project.color}`}>
-                  <span className="text-6xl">{project.image}</span>
+                  <img
+                   src={project.image}
+                   alt={project.title}
+                   className="w-full h-full object-cover"
+                  />
                 </div>
                 
                 <div className="space-y-3">

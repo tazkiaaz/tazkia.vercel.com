@@ -19,20 +19,20 @@ const contactInfo = [
   {
     icon: Mail,
     label: 'Email',
-    value: 'hello@developer.com',
-    href: 'mailto:hello@developer.com',
+    value: 'tazkiashark@gmail.com',
+    href: 'mailto:tazkiashark@gmail.com',
   },
   {
     icon: Phone,
     label: 'Telepon',
-    value: '+62 812 3456 7890',
-    href: 'tel:+6281234567890',
+    value: '+62 83822966103',
+    href: 'tel:+6283822966103',
   },
   {
     icon: MapPin,
     label: 'Lokasi',
-    value: 'Jakarta, Indonesia',
-    href: '#',
+    value: 'Aceh, Indonesia',
+    href: 'https://maps.google.com/?q=Aceh',
   },
 ];
 
